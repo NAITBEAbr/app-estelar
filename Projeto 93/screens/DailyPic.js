@@ -17,7 +17,7 @@ export default class DailyPicScreen extends Component {
 
     getAPOD = () => {
         axios
-            .get("https://api.nasa.gov/planetary/apod?api_key=COGdtQeIWk1mbziFVQgpfK3JfP4dBSAlQg8imDGw")
+            .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
             .then(response => {
                 this.setState({ apod: response.data })
             })
